@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../mycss/mycss.css">
+    <link rel="stylesheet" href="../mycss/animate.css">
+</head>
+<body>
+<!--全局js-->
+<script src="../lib/jQuery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/metisMenu/jquery.metisMenu.js"></script>
+<script src="../lib/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../lib/layer/layer.min.js"></script>
+<script src="../lib/pace/pace.min.js"></script>
+<script src="../lib/layui/lay/modules/laydate.js">
+    laydate.render({
+        elem: '#date'
+        ,type: 'datetime'
+        ,position: 'static'
+    });
+</script>
+    欢迎
+    <span> 现在的时间是</span>
+    <input id="date" class="datetimepicker-days">
+<script>
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#test5' //指定元素
+        ,type: 'datetime'
+    });
+</script>
+<span>test LayuiDate</span><br>
+选择时间：<input type="text" class="layui-input" id= "test5" placeholder="yyyy-MM-dd HH:mm:ss" name="createtime" style="height:30px;width:180px;">
+
+</body>
+</html>

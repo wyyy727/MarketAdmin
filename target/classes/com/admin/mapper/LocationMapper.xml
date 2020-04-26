@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.LocationDao">
+
+	<select id="LoadProvince" resultType="Map">
+		select provinceID ,province from ad_province
+	</select>
+	
+	<select id="LoadCity" parameterType="int" resultType="Map">
+		select cityid,city from ad_city where father=#{father}
+	</select>
+</mapper>

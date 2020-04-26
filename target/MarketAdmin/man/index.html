@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>超市进销存管理系统</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../mycss/mycss.css">
+    <link rel="stylesheet" href="../mycss/animate.css">
+</head>
+<body class="fixed-sidebar gray-bg full-height-layout" style="overflow: hidden;">
+    <div id="wrapper">
+        <!--左侧导航条开始-->
+        <nav class="navbar-default navbar-static-side ">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="left-side-header">
+                        <div class="dropdown profile-element">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                <span class="clear">
+                                    <span class="block">管理员</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="logo-elememt">ZT</div>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-credit-card"></i><span>供应商管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second">
+                            <li><a class="J_menuItem" href="provider/providers.html">供应商信息管理</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users"></i><span>仓库管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second">
+                            <li><a class="J_menuItem" href="cangku/bills.html" data-index="0">商品管理</a></li>
+                            <li><a class="J_menuItem" href="cangku/chuku.html">商品出库</a></li>
+                            <li><a class="J_menuItem" href="cangku/ruku.html">商品入库</a></li>
+                        </ul>
+                    </li>
+
+					<li>
+                        <a href="#"><i class="fa fa-users"></i><span>信息管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second">
+                            <li><a class="J_menuItem" href="user/emp.html">员工资料管理</a></li>
+                            <li><a class="J_menuItem" href="user/userInfo.html">用户管理</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-users"></i><span>公告管理</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second">
+                            <li><a class="J_menuItem" href="notify/notify.html">公告消息</a></li>
+                            <li><a class="J_menuItem" href="notify/addNotify.html">发布公告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!--左侧导航条结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top">
+                    <div class="navbar-header">
+                        <a href="#" class="toggle-minisize minimalize  btn btn-primary"><i class="fa fa-bars"></i></a>
+                    </div>
+
+                    <ul class="nav navbar-right">
+                        <li class="dropdown">
+                            <span id="usernow" class="dropdown-toggle count-info" data-toggle="dropdown" href="#" >
+                                <!--<i class="fa fa-envelope"></i> <span class="label label-warning">16</span>-->
+                                您好syy, 欢迎登录！
+                            </span>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row content-tabs">
+
+                <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i></button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="javascript:;" class="active J_menuTab" data-id="posWaterPure.html">首页</a>
+                    </div>
+                </nav>
+
+                <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i></button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span></button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive"><a>定位当前选项卡</a></li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll"><a>关闭全部选项卡</a></li>
+                        <li class="J_tabCloseOther"><a>关闭其他选项卡</a></li>
+                    </ul>
+                </div>
+                <a href="zt_login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa-sign-out"></i>退出</a>
+            </div>
+            <div class="row J_mainContent" id = "content-main">
+                <iframe src="posWaterPure.html" frameborder="0" class="J_iframe" name="iframe0" width="100%" height="100%" data-id="posWaterPure.html" seamless></iframe>
+            </div>
+
+        </div>
+        <!--右侧部分结束-->
+    </div>
+
+
+    <!--全局js-->
+    <script src="../lib/jQuery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../lib/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../lib/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../lib/layer/layer.min.js"></script>
+    <script src="../lib/pace/pace.min.js"></script>
+
+<!--自定义js-->
+	<script src="../myjs/total.js"></script>
+    <script src="../myjs/myjs.js"></script>
+    <script src="../myjs/mycontabs.js"></script>
+</body>
+
+</html>

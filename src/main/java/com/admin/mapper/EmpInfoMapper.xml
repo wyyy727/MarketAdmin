@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.EmpInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.admin.entity.EmpInfo" >
+    <id column="emp_no" property="empNo" jdbcType="INTEGER" />
+    <result column="emp_name" property="empName" jdbcType="VARCHAR" />
+    <result column="emp_sex" property="empSex" jdbcType="INTEGER" />
+    <result column="emp_joindate" property="empJoindate" jdbcType="TIMESTAMP" />
+    <result column="emp_duty" property="empDuty" jdbcType="VARCHAR" />
+    <result column="emp_birthday" property="empBirthday" jdbcType="TIMESTAMP" />
+    <result column="emp_phone" property="empPhone" jdbcType="VARCHAR" />
+    <result column="emp_email" property="empEmail" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    emp_no, emp_name, emp_sex,date_format( emp_joindate, '%Y-%m-%d %T' )emp_joindate , emp_duty,date_format( emp_birthday, '%Y-%m-%d %T' )emp_birthday , emp_phone,
+    emp_email
+  </sql>
+  <select id="selectByPrimaryKey" resultType="Map" parameterType="java.lang.Integer" >
+    select <include refid="Base_Column_List" /> from emp_info where emp_no = #{empNo,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from emp_info
+    where emp_no = #{empNo,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.admin.entity.EmpInfo" >
+    insert into emp_info (emp_name, emp_sex,
+      emp_joindate, emp_duty, emp_birthday, 
+     emp_phone, emp_email
+      )
+    values (#{empName,jdbcType=VARCHAR}, #{empSex,jdbcType=INTEGER},
+      #{empJoindate,jdbcType=TIMESTAMP}, #{empDuty,jdbcType=VARCHAR}, #{empBirthday,jdbcType=TIMESTAMP},
+     #{empPhone,jdbcType=VARCHAR}, #{empEmail,jdbcType=VARCHAR}
+      )
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="com.admin.entity.EmpInfo" >
+    update emp_info
+    set emp_name = #{empName,jdbcType=VARCHAR},
+      emp_sex = #{empSex,jdbcType=INTEGER},
+      emp_joindate = #{empJoindate,jdbcType=TIMESTAMP},
+      emp_duty = #{empDuty,jdbcType=VARCHAR},
+      emp_birthday = #{empBirthday,jdbcType=TIMESTAMP},
+      emp_phone = #{empPhone,jdbcType=VARCHAR},
+      emp_email = #{empEmail,jdbcType=VARCHAR}
+    where emp_no = #{empNo,jdbcType=INTEGER}
+  </update>
+  <select id="getAllEmpInfo" resultType="Map">
+    select
+    <include refid="Base_Column_List" />
+    from `emp_info` limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getEmpInfoCount" resultType="int">
+      select count(*) from emp_info
+  </select>
+  <select id="getAllEmpInfoSearch"  resultType="Map">
+    select
+    <include refid="Base_Column_List" />
+    from emp_info where emp_name LIKE CONCAT('%', #{search}, '%') limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getEmpInfoCountSearch" resultType="int">
+      select count(*) from emp_info where emp_name LIKE CONCAT('%', #{search}, '%');
+  </select>
+  <select id="getEmpNameAndId" resultType="Map">
+    select emp_no,emp_name from emp_info
+  </select>
+</mapper>

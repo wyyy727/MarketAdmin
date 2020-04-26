@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>渠道商管理</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+
+    <link rel="stylesheet" href="../lib/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../lib/bootstrap-fileinput/fileinput.css">
+    <!--<link rel="stylesheet" href="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="../mycss/mycss.css">
+    <link rel="stylesheet" href="../mycss/animate.css">
+
+
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+        <div class="row row-lg">
+            <div class="col-xs-12">
+
+                <div class="example">
+                    <table id="upStreamTableFromData"  data-search="true"  data-toggle="table" data-row-style="rowStyle" data-show-columns="true" data-mobile-responsive="false" style=" white-space:nowrap">
+                    </table>
+                    <div id="toolbarUpStream" class="pull-left" style="margin-right: 20px;">
+                        <button id="btn_input" type="button" class="btn btn-default" >
+                            <span class="fa fa-edit" aria-hidden="true" ></span> 添加渠道
+                        </button>
+
+                        <!--<button id="btn_rate" type="button" class="btn btn-default" >-->
+                            <!--<span class="fa fa-edit" aria-hidden="true" ></span> 更改成本费率-->
+                        <!--</button>-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--添加渠道商-->
+<div id="upSteamModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="terminalInputId">添加渠道商</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 基本信息</a>
+                            </li>
+                            <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false"> 交易参数</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                    <div id="tab-1" class="tab-pane active">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-2 "><label class="control-label pull-right">渠道商名称</label></div>
+                                <div class="col-sm-4">
+                                    <input id="upStreamDefinition" class="form-control">
+                                </div>
+                                <div class="col-sm-2 "><label class="control-label pull-right">渠道商商户号</label></div>
+                                <div class="col-sm-4">
+                                    <input id="upNo" class="form-control">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 "><label class="control-label pull-right">渠道交易IP</label></div>
+                                <div class="col-sm-4">
+                                    <input id="upStreamIp" class="form-control" placeholder="选填">
+                                </div>
+                                <div class="col-sm-2 "><label class="control-label pull-right">交易端口</label></div>
+                                <div class="col-sm-4">
+                                    <input id="upStreamPort" class="form-control" placeholder="选填">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+                        <div class="panel-body">
+                            <!--<div class="row">-->
+                                <!--<div class="col-sm-2"> <label class="control-label "> 参数设置</label></div>-->
+
+                            <!--</div>-->
+                            <!--<br>-->
+                            <div class="row">
+                                <div class="col-sm-2 "><label class="control-label pull-right">交易类型</label></div>
+                                <div class="col-sm-3">
+                                    <select class="selectpicker " id="payType" title="请选择交易类型" data-style="btn-info" data-live-search="true" >
+                                    </select>
+                                </div>
+                                <div class="col-sm-2"><label  class="control-label pull-right">交易判定</label></div>
+                                <div class="col-sm-3">
+                                    <select class="selectpicker show-tick form-control" id="trading"  >
+                                        <option value="1">是</option>
+                                        <option value="0">否</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2"><label  class="control-label pull-right">费率</label></div>
+                                <div class="col-sm-3">
+                                    <input id="rateValue" class="form-control" type="number">
+                                </div>
+                                <div class="col-sm-2"><label  class="control-label pull-right">交易手续费</label></div>
+                                <div class="col-sm-3">
+                                    <input id="tradfee" class="form-control" type="number">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2"><label  class="control-label pull-right">最低交易额</label></div>
+                                <div class="col-sm-3">
+                                    <input id="min" class="form-control" type="number">
+                                </div>
+
+                                <div class="col-sm-2"><label  class="control-label pull-right">最高交易额</label></div>
+                                <div class="col-sm-3">
+                                    <input id="max" class="form-control" type="number">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2"><label  class="control-label pull-right">开始时间</label></div>
+                                <div class="col-sm-3">
+                                    <input id="start" class="form-control" value="000000">
+                                </div>
+
+                                <div class="col-sm-2"><label  class="control-label pull-right">结束时间</label></div>
+                                <div class="col-sm-3">
+                                    <input id="end" class="form-control" value="235959">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="addStream">添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--修改成本费率-->
+<div id="rateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" >成本费率修改</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">费率</label></div>
+                    <div class="col-sm-3">
+                        <input id="rateValue2" class="form-control" type="number">
+                    </div>
+                    <div class="col-sm-2"><label  class="control-label pull-right">交易手续费</label></div>
+                    <div class="col-sm-3">
+                        <input id="tradfee2" class="form-control" type="number">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">最低交易额</label></div>
+                    <div class="col-sm-3">
+                        <input id="min2" class="form-control" type="number">
+                    </div>
+
+                    <div class="col-sm-2"><label  class="control-label pull-right">最高交易额</label></div>
+                    <div class="col-sm-3">
+                        <input id="max2" class="form-control" type="number">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">开始时间</label></div>
+                    <div class="col-sm-3">
+                        <input id="start2" class="form-control" value="000000">
+                    </div>
+
+                    <div class="col-sm-2"><label  class="control-label pull-right">结束时间</label></div>
+                    <div class="col-sm-3">
+                        <input id="end2" class="form-control" value="235959">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="changeSave">修改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+<!-- Bootstrap table -->
+<script src="../lib/jQuery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/bootstrap-table/bootstrap-table.js"></script>
+<script src="../lib/bootstrap-table/bootstrap-table-mobile.js"></script>
+<script src="../lib/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../lib/layui/layui.js"></script>
+<script src="../lib/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
+
+
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>-->
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>-->
+
+<!--自定义js-->
+<script src="../myjs/total.js"></script>
+<script src="../myjs/upStreamMessage.js"></script>
+
+</body>
+</html>

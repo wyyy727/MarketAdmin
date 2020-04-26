@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>公告消息</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+    <link id="ckeditorTheme" rel="stylesheet" href="../../lib/jslib/ckeditor/themes/ckeditor.css" type="text/css">
+<script type="text/javascript" src="../../lib/jslib/ckeditor/ckeditor.js" charset="utf-8"></script>
+<script src="../../lib/jslib/My97DatePicker/WdatePicker.js"></script>
+    <link rel="stylesheet" href="../../lib/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-fileinput/fileinput.css">
+    <!--<link rel="stylesheet" href="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="../../mycss/mycss.css">
+    <link rel="stylesheet" href="../../mycss/animate.css">
+
+
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox-content">
+        <div class="row row-lg">
+            <div class="col-xs-12">
+                <div class="example">
+                    <table id="NotifyTableFromData"  data-search="true"  data-toggle="table" data-row-style="rowStyle" data-show-columns="true" data-mobile-responsive="false" style=" white-space:nowrap">
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="rateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel"> 
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+            <div class="modal-header">
+		<form id="nofiyEditForm" method="post" >
+			<table>
+				<tr> 
+					<th>公告ID:</th>
+					<td><input style="border:none;" id="gg" name="ID" type="text" readOnly value=""></td>
+					<th>公告编号:</th>
+					<td><input style="border:none;" id="bh" name="epNo" type="text"  readOnly value=""></td>
+				</tr>
+				<tr>
+					<th>发布人员:</th>
+					<td><input style="border:none;" id="ry"  name="Operator" type="text" readOnly value=""></td>
+					<!--<th>受众:</th>
+					<td><select id="search_epType"   class="easyui-combobox" editable="false" name="epType" value=""
+							style="width: 150px;">
+							<option value="99">全部</option>
+							<option value="1">商户</option>
+							<option value="2">代理商</option>
+						</select></td>-->
+				</tr>
+				<tr>
+					<th>生效日期:</th>
+					<td><input  name="startDate" id="sx"  data-options="required:true" onclick="WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd'})" type="text"  value="" ></td> 
+					<th>截止日期:</th>
+					<td><input  name="endDate"  id="jz"  onclick="WdatePicker({readOnly:true,dateFmt:'yyyy-MM-dd'})" type="text" value=""></td>
+				</tr>
+				<tr>
+					<th>公告标题:</th>
+					<td><input  name="title" id="bt" data-options="required:true" type="text"  value=""></td>
+					<th>发布时间:</th>
+					<td><input  name="time"  id="fb" type="text"  readOnly value=""></td> 
+				</tr>
+				<tr>
+				<th><span>*</span>公告内容:</th>
+				<td colspan="3">
+					<textarea id="noticeContentTextarea" cols="65" rows="20" name="content">
+					</textarea>
+					<script type="text/javascript">
+						var editor ;  
+                        if(!CKEDITOR.instances.noticeContentTextarea){  //判定noticeContentTextarea是否存在  
+                             editor= CKEDITOR.replace("noticeContentTextarea",{width:'98%', height:500}); 
+                             editor.setData(''); 
+                        }else{  
+                             addCkeditor("noticeContentTextarea");  
+                        }  
+                        CKEDITOR.instances["noticeContentTextarea"].on("instanceReady", function () {
+							this.document.on("keyup");
+						});
+	                    function addCkeditor(id){  
+	                        var editor2 = CKEDITOR.instances[id];  
+	                        if(editor2) editor2.destroy(true);//销毁编辑器 content2,然后新增一个  
+	                            editor = CKEDITOR.replace(id,{width:'98%', height:500});  
+	                            editor.setData(''); 
+	                    }  
+					</script>
+				</td>
+			</tr>
+		</table>
+		</form>
+	</div>
+	<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="changeSave"  >修改</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+	</div>
+</div>
+</div>
+<!-- /.modal -->
+
+ <!-- 模态框   信息删除确认 -->
+<div class="modal fade" id="delcfmOverhaul">
+       <div class="modal-dialog">
+                  <div class="modal-content message_align">
+                              <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                            <h4 class="modal-title">提示</h4>
+                                </div>
+                                <div class="modal-body">
+                                            <!-- 隐藏需要删除的id -->
+                                            <input type="hidden" id="deleteHaulId" />
+                                            <p>您确认要删除该条公告吗？</p>
+                                </div>
+                                 <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">取消</button>
+                                            <button type="button" class="btn btn-primary"
+                                                id="deleteHaulBtn">删除</button>
+                                 </div>
+                    </div>
+       </div>
+</div>
+
+
+<!-- Bootstrap table -->
+<script src="../../lib/jQuery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-mobile.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../lib/layui/layui.js"></script>
+<script src="../../lib/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../../lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
+<script src="../../lib/bootstrap-fileinput/fileinput.js"></script>
+<script src="../../lib/bootstrap-fileinput/piexif.js"></script>
+<script src="../../lib/bootstrap-fileinput/purify.js"></script>
+<script src="../../lib/bootstrap-fileinput/sortable.js"></script>
+<script src="../../lib/bootstrap-fileinput/zh.js"></script>
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>-->
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>-->
+
+<!--自定义js-->
+<script src="../../myjs/total.js"></script>
+<script src="../../myjs/Notify.js"></script>
+</body>
+</html>

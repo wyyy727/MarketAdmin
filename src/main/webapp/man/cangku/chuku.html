@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>出库信息管理</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+
+    <link rel="stylesheet" href="../../lib/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-fileinput/fileinput.css">
+    <!--<link rel="stylesheet" href="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="../../mycss/mycss.css">
+    <link rel="stylesheet" href="../../mycss/animate.css">
+
+</head>
+<body class="gray-bg">
+<script src="../../lib/layui/lay/modules/laydate.js"></script>
+<script>
+    laydate.render({
+        elem: '#addDate'
+        ,type: 'datetime'
+    });
+</script>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+        <div class="row row-lg">
+            <div class="col-xs-12">
+                <div class="example">
+                    <table id="loadChuKuInfoFromData"  data-search="true"  data-toggle="table" data-row-style="rowStyle" data-show-columns="true" data-mobile-responsive="false" style=" white-space:nowrap">
+                    </table>
+                    <div id="toolbarChuKuInfo" class="pull-left" style="margin-right: 20px;">
+                        <button id="btn_input" type="button" class="btn btn-success" >
+                            <span class="fa fa-edit" aria-hidden="true" ></span>添加出库信息
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--添加出库信息-->
+<div id="addChuKu" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="terminalInputId">添加出库信息</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 基本信息</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">出库商品</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="addBill" title="请选择商品" data-style="btn-info" data-live-search="true" class="selectpicker">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">出库数量</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addAmount" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">出库时间</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addDate" type="text" class="layui-input"  placeholder="yyyy-MM-dd HH:mm:ss" style="height:30px;width:180px;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">操作人</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="addPerson" title="请选择操作人" data-style="btn-info" data-live-search="true" class="selectpicker">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">备注</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addRemark" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="addState" class="selectpicker">
+                                            <option value="1">正常</option>
+                                            <option value="0">失效</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="addChuKuMessage">添加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--修改入库信息-->
+<!--<div id="rateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" >供应商信息修改</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">大商户ID</label></div>
+                    <div class="col-sm-3">
+                        <input id="rateValue2" readonly="true" class="form-control" type="number">
+                    </div>
+                    <div class="col-sm-2"><label  class="control-label pull-right">名称</label></div>
+                    <div class="col-sm-3">
+                        <input id="tradfee2" class="form-control" type="string">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">状态</label></div>
+                    <div class="col-sm-3">
+                        &lt;!&ndash;<input id="min2" class="form-control" type="number">&ndash;&gt;
+                        <select id="min2" class="form-control">
+                            <option value="1">正常</option>
+                            <option value="0">废除</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2"><label  class="control-label pull-right">限额</label></div>
+                    <div class="col-sm-3">
+                        <input id="max2" class="form-control" type="number">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2"><label  class="control-label pull-right">单笔限额</label></div>
+                    <div class="col-sm-3">
+                        <input id="start2" class="form-control" value="000000">
+                    </div>
+
+                    <div class="col-sm-2"><label  class="control-label pull-right">备注：</label></div>
+                    <div class="col-sm-3">
+                        <input id="end2" class="form-control" value="235959">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="changeSave">修改</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+
+<!-- Bootstrap table -->
+<script src="../../lib/jQuery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-mobile.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../lib/layui/layui.js"></script>
+<script src="../../lib/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../../lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
+
+
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>-->
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>-->
+
+<!--自定义js-->
+<script src="../../myjs/total.js"></script>
+<script src="../../myjs/chuku.js"></script>
+
+</body>
+</html>

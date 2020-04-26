@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>供应商信息管理</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+
+    <link rel="stylesheet" href="../../lib/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-fileinput/fileinput.css">
+    <!--<link rel="stylesheet" href="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="../../mycss/mycss.css">
+    <link rel="stylesheet" href="../../mycss/animate.css">
+
+</head>
+<body class="gray-bg">
+<script src="../../lib/layui/lay/modules/laydate.js"></script>
+<script>
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#addDate' //指定元素
+        ,type: 'datetime'
+    });
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#upDate' //指定元素
+        ,type: 'datetime'
+    });
+</script>
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+        <div class="row row-lg">
+            <div class="col-xs-12">
+                <div class="example">
+                    <table id="loadProviderFromData"  data-search="true"  data-toggle="table" data-row-style="rowStyle" data-show-columns="true" data-mobile-responsive="false" style=" white-space:nowrap">
+                    </table>
+                    <div id="toolbarProvider" class="pull-left" style="margin-right: 20px;">
+                        <button id="btn_input" type="button" class="btn btn-success" >
+                            <span class="fa fa-edit" aria-hidden="true" ></span>添加供应商
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--添加供应商-->
+<div id="addProvider" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="terminalInputId">添加供应商</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 基本信息</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">名称</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addProName" class="form-control">
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">联系人</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addContName" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">联系电话</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addPhone" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">邮箱</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addEmail" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">所在地</label></div>
+                                    <div class="col-sm-5">
+                                        <select class="selectpicker " id="province" title="请选择省区" data-live-search="true"
+                                                onchange="provinceSelecteds(this)">
+                                        </select>
+                                        <!--<select class="selectpicker" id="banktotal" data-live-search="true"  >-->
+                                        <!--</select>-->
+                                    </div>
+                                    <!--<div class="col-sm-2 "><label class="control-label pull-right">所在市</label></div>-->
+                                    <div class="col-sm-5">
+                                        <select class="selectpicker " id="city"  title="请选择市区" data-live-search="true" >
+                                        </select>
+                                        <!--<select class="selectpicker" id="banktotal" data-live-search="true"  >-->
+                                        <!--</select>-->
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">详细地址</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="address" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">时间</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addDate" type="text" class="layui-input"  placeholder="yyyy-MM-dd HH:mm:ss" style="height:30px;width:180px;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!--<div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addState" class="form-control" placeholder="">
+                                    </div>-->
+                                    <div class="col-sm-2 "><label class="control-label pull-right">备注</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="addRemark" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="addProviderMessage">添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--修改供应商信息-->
+<div id="rateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" >供应商信息修改</h5>
+            </div>
+            <div class="modal-body ">
+                <input type="hidden" id="upProId">
+                <div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">供应商名称</label></div>
+                    <div class="col-sm-4">
+                        <input id="upProName" class="form-control">
+                    </div>
+                    <div class="col-sm-2 "><label class="control-label pull-right">联系人</label></div>
+                    <div class="col-sm-4">
+                        <input id="upContName" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">联系电话</label></div>
+                    <div class="col-sm-4">
+                        <input id="upPhone" class="form-control" placeholder="">
+                    </div>
+                    <div class="col-sm-2 "><label class="control-label pull-right">邮箱</label></div>
+                    <div class="col-sm-4">
+                        <input id="upEmail" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">所在地</label></div>
+                    <div class="col-sm-5">
+                        <select class="selectpicker " id="upprovince" title="请选择省区" data-live-search="true"  onchange="provinceSelecteds(this)">
+                        </select>
+                        &lt;!&ndash;<select class="selectpicker" id="banktotal" data-live-search="true"  >&ndash;&gt;
+                        &lt;!&ndash;</select>&ndash;&gt;
+                    </div>
+                    &lt;!&ndash;<div class="col-sm-2 "><label class="control-label pull-right">所在市</label></div>&ndash;&gt;
+                    <div class="col-sm-5">
+                        <select class="selectpicker " id="upcity"  title="请选择市区" data-live-search="true" >
+                        </select>
+                        &lt;!&ndash;<select class="selectpicker" id="banktotal" data-live-search="true"  >&ndash;&gt;
+                        &lt;!&ndash;</select>&ndash;&gt;
+                    </div>
+                </div>-->
+                <div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">详细地址</label></div>
+                    <div class="col-sm-4">
+                        <input id="upaddress" type="text" class="layui-input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">时间</label></div>
+                    <div class="col-sm-4">
+                        <input id="upDate" type="text" class="layui-input"  placeholder="yyyy-MM-dd HH:mm:ss" style="height:30px;width:180px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                    <div class="col-sm-4">
+                        <select id="upState">
+                            <option value="1">正常</option>
+                            <option value="0">失效</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-2 "><label class="control-label pull-right">备注</label></div>
+                    <div class="col-sm-4">
+                        <input id="upRemark" class="form-control" placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="changeSave">修改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Bootstrap table -->
+<script src="../../lib/jQuery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-mobile.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../lib/layui/layui.js"></script>
+<script src="../../lib/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../../lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
+
+
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>-->
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>-->
+
+<!--自定义js-->
+    <script src="../../myjs/total.js"></script>
+    <script src="../../myjs/provider.js"></script>
+
+</body>
+</html>

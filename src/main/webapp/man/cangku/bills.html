@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>商品展示</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../../lib/layui/css/layui.css">
+
+    <link rel="stylesheet" href="../../lib/bootstrap-table/bootstrap-table.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-select/css/bootstrap-select.css">
+    <link rel="stylesheet" href="../../lib/bootstrap-fileinput/fileinput.css">
+    <!--<link rel="stylesheet" href="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.css">-->
+    <link rel="stylesheet" href="../../mycss/mycss.css">
+    <link rel="stylesheet" href="../../mycss/animate.css">
+
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="ibox-content">
+        <div class="row row-lg">
+            <div class="col-xs-12">
+                <div class="example">
+                    <table id="loadBillsFromData"  data-search="true"  data-toggle="table" data-row-style="rowStyle" data-show-columns="true" data-mobile-responsive="false" style=" white-space:nowrap">
+                    </table>
+                    <div id="toolbarpassWay" class="pull-left" style="margin-right: 20px;">
+                        <button id="btn_input" type="button" class="btn btn-success" >
+                            <span class="fa fa-edit" aria-hidden="true" ></span> 添加商品
+                        </button>
+                        <!--<button id="btn_rate" type="button" class="btn btn-default" >-->
+                        <!--<span class="fa fa-edit" aria-hidden="true" ></span> 更改成本费率-->
+                        <!--</button>-->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--添加商品-->
+<div id="addPassWay" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="terminalInputId">添加商品</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 基本信息</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">名称</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="bill_name" class="form-control">
+                                       <!-- <input type="hidden" id="bill_id" class="form-control">-->
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">单价</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="bill_price" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">库存量</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="bill_amount" class="form-control">
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">商品单位</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="bill_company" class="selectpicker">
+                                            <option value="1">个</option>
+                                            <option value="2">箱</option>
+                                            <option value="3">瓶</option>
+                                            <option value="4">袋</option>
+                                            <option value="5">台</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">总价</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="bill_money" class="form-control">
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">备注</label></div>
+                                    <div class="col-sm-4">
+                                        <input id="bill_remark" class="form-control">
+                                    </div>
+                                </div>
+                                <!--<div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">供应商id</label></div>
+                                    <div class="col-sm-4">
+                                            <select   id="provider_id" class="show-tick form-control"  onchange="fuzhi(this.value)">
+                                            </select>
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                                    <div class="col-sm-4">
+                                        <select class="selectpicker show-tick form-control" id="state"  >
+                                            <option value="1">正常</option>
+                                            <option value="0">缺货</option>
+                                        </select>
+                                    </div>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col-sm-2 "><label class="control-label pull-right">操作人</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="addPerson" title="请选择操作人" data-style="btn-info" data-live-search="true" class="selectpicker">
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-2 "><label class="control-label pull-right">供应商名</label></div>
+                                    <div class="col-sm-4">
+                                        <select id="addProvider" title="请选择供应商" data-style="btn-info" data-live-search="true" class="selectpicker">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="addPBillsMessage">添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--修改商品-->
+<div id="rateModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="terminalInputId1">修改商品</h5>
+            </div>
+            <div class="modal-body ">
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 基本信息</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">名称</label></div>
+                        <div class="col-sm-4">
+                            <input id="bill_name1" class="form-control">
+                             <input type="hidden" id="bill_id" class="form-control">
+                        </div>
+                        <div class="col-sm-2 "><label class="control-label pull-right">单价</label></div>
+                        <div class="col-sm-4">
+                            <input id="bill_price1" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">库存量</label></div>
+                        <div class="col-sm-4">
+                            <input id="bill_amount1" class="form-control">
+                        </div>
+                        <div class="col-sm-2 "><label class="control-label pull-right">商品单位</label></div>
+                        <div class="col-sm-4">
+                            <select id="bill_company1" class="selectpicker">
+                                <option value="1">个</option>
+                                <option value="2">箱</option>
+                                <option value="3">瓶</option>
+                                <option value="4">袋</option>
+                                <option value="5">台</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">总价</label></div>
+                        <div class="col-sm-4">
+                            <input id="bill_money1" class="form-control">
+                        </div>
+                        <div class="col-sm-2 "><label class="control-label pull-right">备注</label></div>
+                        <div class="col-sm-4">
+                            <input id="bill_remark1" class="form-control">
+                        </div>
+                    </div>
+                    <!--<div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">供应商id</label></div>
+                        <div class="col-sm-4">
+                                <select   id="provider_id" class="show-tick form-control"  onchange="fuzhi(this.value)">
+                                </select>
+                        </div>
+                        <div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                        <div class="col-sm-4">
+                            <select class="selectpicker show-tick form-control" id="state"  >
+                                <option value="1">正常</option>
+                                <option value="0">缺货</option>
+                            </select>
+                        </div>
+                    </div>-->
+                    <div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">操作人</label></div>
+                        <div class="col-sm-4">
+                            <select id="addPerson1" title="请选择操作人" data-style="btn-info" data-live-search="true" class="selectpicker">
+                            </select>
+                        </div>
+                        <div class="col-sm-2 "><label class="control-label pull-right">供应商名</label></div>
+                        <div class="col-sm-4">
+                            <select id="addProvider1" title="请选择供应商" data-style="btn-info" data-live-search="true" class="selectpicker">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 "><label class="control-label pull-right">状态</label></div>
+                        <div class="col-sm-4">
+                            <select id="upState" data-style="btn-info" data-live-search="true" class="selectpicker">
+                                <option value="1">正常</option>
+                                <option value="0">失效</option>
+                            </select>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="changeSave">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap table -->
+<script src="../../lib/jQuery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-mobile.js"></script>
+<script src="../../lib/bootstrap-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../lib/layui/layui.js"></script>
+<script src="../../lib/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="../../lib/bootstrap-select/js/i18n/defaults-zh_CN.js"></script>
+
+
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script>-->
+<!--<script src="../lib/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js"></script>-->
+
+<!--自定义js-->
+    <script src="../../myjs/total.js"></script>
+    <script src="../../myjs/bills.js"></script>
+
+</body>
+</html>

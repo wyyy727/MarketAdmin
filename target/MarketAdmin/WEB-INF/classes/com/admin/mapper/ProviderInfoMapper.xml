@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.ProviderInfoMapper" >
+<!--  <resultMap id="BaseResultMap" type="com.admin.entity.ProviderInfo" >
+    <id column="pro_id" property="proId" jdbcType="INTEGER" />
+    <result column="pro_name" property="proName" jdbcType="VARCHAR" />
+    <result column="prov_contame" property="provContame" jdbcType="VARCHAR" />
+    <result column="pro_date" property="proDate" jdbcType="TIMESTAMP" />
+    <result column="pro_phone" property="proPhone" jdbcType="VARCHAR" />
+    <result column="pro_email" property="proEmail" jdbcType="VARCHAR" />
+    <result column="pro_address" property="proAddress" jdbcType="VARCHAR" />
+    <result column="pro_state" property="proState" jdbcType="INTEGER" />
+    <result column="pro_remark" property="proRemark" jdbcType="VARCHAR" />
+  </resultMap>-->
+
+  <sql id="Base_Column_List" >
+    pro_id, pro_name, prov_contame,date_format(pro_date,'%Y-%m-%d %T')pro_date,pro_phone, pro_email,pro_address, pro_state,
+    pro_remark
+  </sql>
+
+  <select id="selectByPrimaryKey" resultType="Map" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from provider_info
+    where pro_id = #{proId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from provider_info
+    where pro_id = #{proId,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="com.admin.entity.ProviderInfo" >
+    insert into provider_info (pro_id, pro_name, prov_contame, 
+      pro_date, pro_phone, pro_email, 
+      pro_address, pro_state, pro_remark
+      )
+    values (#{proId,jdbcType=INTEGER}, #{proName,jdbcType=VARCHAR}, #{provContame,jdbcType=VARCHAR}, 
+      str_to_date(#{proDate},'%Y-%m-%d %T'), #{proPhone,jdbcType=VARCHAR}, #{proEmail,jdbcType=VARCHAR},
+      #{proAddress,jdbcType=VARCHAR}, #{proState,jdbcType=INTEGER}, #{proRemark,jdbcType=VARCHAR}
+      )
+</insert>
+  <update id="updateByPrimaryKey" parameterType="com.admin.entity.ProviderInfo" >
+    update provider_info
+    set pro_name = #{proName,jdbcType=VARCHAR},
+      prov_contame = #{provContame,jdbcType=VARCHAR},
+      pro_date = str_to_date(#{proDate},'%Y-%m-%d %T'),
+      pro_phone = #{proPhone,jdbcType=VARCHAR},
+      pro_email = #{proEmail,jdbcType=VARCHAR},
+      pro_address = #{proAddress,jdbcType=VARCHAR},
+      pro_state = #{proState,jdbcType=INTEGER},
+      pro_remark = #{proRemark,jdbcType=VARCHAR}
+    where pro_id = #{proId,jdbcType=INTEGER}
+  </update>
+  <select id="getAllProviderInfo" resultType="Map">
+    select
+    <include refid="Base_Column_List" />
+    from provider_info limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getProviderCount" resultType="int">
+    select count(*) from  provider_info
+  </select>
+  <select id="getAllProviderSearch" resultType="Map">
+    select
+    <include refid="Base_Column_List" />
+    from provider_info where pro_name like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_phone like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_email like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_address like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_remark like CONCAT(CONCAT('%',#{search}),'%')
+    or prov_contame like CONCAT(CONCAT('%',#{search}),'%')
+    limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getAllProCountSearch" resultType="int">
+    select count(*) from provider_info where pro_name like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_phone like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_email like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_address like CONCAT(CONCAT('%',#{search}),'%')
+    or pro_remark like CONCAT(CONCAT('%',#{search}),'%')
+    or prov_contame like CONCAT(CONCAT('%',#{search}),'%')
+  </select>
+  <select id="getProviderNameAndId" resultType="Map">
+    select pro_id, pro_name from provider_info where pro_state=1
+  </select>
+</mapper>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.RuKuInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.admin.entity.RuKuInfo" >
+    <id column="ru_id" property="ruId" jdbcType="INTEGER" />
+    <result column="ru_amount" property="ruAmount" jdbcType="INTEGER" />
+    <result column="bill_id" property="billId" jdbcType="INTEGER" />
+    <result column="ru_date" property="ruDate" jdbcType="TIMESTAMP" />
+    <result column="ru_peo" property="ruPeo" jdbcType="VARCHAR" />
+    <result column="ru_peo_id" property="ruPeoId" jdbcType="INTEGER" />
+    <result column="ru_remark" property="ruRemark" jdbcType="VARCHAR" />
+    <result column="ru_state" property="ruState" jdbcType="INTEGER" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    ru_id, ru_amount, bill_id, ru_date, ru_peo, ru_peo_id, ru_remark, ru_state
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from ruku_info
+    where ru_id = #{ruId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from ruku_info
+    where ru_id = #{ruId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.admin.entity.RuKuInfo" >
+    insert into ruku_info (ru_id, ru_amount, bill_id, 
+      ru_date, ru_peo, ru_peo_id, 
+      ru_remark, ru_state)
+    values (#{ruId,jdbcType=INTEGER}, #{ruAmount,jdbcType=INTEGER}, #{billId,jdbcType=INTEGER}, 
+      #{ruDate,jdbcType=TIMESTAMP}, #{ruPeo,jdbcType=VARCHAR}, #{ruPeoId,jdbcType=INTEGER}, 
+      #{ruRemark,jdbcType=VARCHAR}, #{ruState,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.admin.entity.RuKuInfo" >
+    update ruku_info
+    set ru_amount = #{ruAmount,jdbcType=INTEGER},
+      bill_id = #{billId,jdbcType=INTEGER},
+      ru_date = #{ruDate,jdbcType=TIMESTAMP},
+      ru_peo = #{ruPeo,jdbcType=VARCHAR},
+      ru_peo_id = #{ruPeoId,jdbcType=INTEGER},
+      ru_remark = #{ruRemark,jdbcType=VARCHAR},
+      ru_state = #{ruState,jdbcType=INTEGER}
+    where ru_id = #{ruId,jdbcType=INTEGER}
+  </update>
+<!--
+date_format(a.ru_date,'%Y-%m-%d %T' )
+date_format(b.bill_name, '%Y-%m-%d %T' )
+-->
+  <select id="getAllRuKuInfo" resultType="Map">
+   SELECT a.ru_id, a.ru_amount, a.bill_id,a.ru_date, a.ru_peo, a.ru_peo_id, a.ru_remark, a.ru_state,
+   b.bill_id,b.bill_name , b.bill_company, b.bill_price, b.bill_time, b.provider_name, b.bill_state,
+    b.bill_person, b.bill_remark, b.bill_amount, b.bill_money, b.provider_id
+    from ruku_info a LEFT JOIN bill_info  b on a.bill_id=b.bill_id limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getRuKuCount" resultType="int">
+    select count(*) from ruku_info
+  </select>
+  <select id="getAllRuKuInfoSearch" resultType="Map">
+    SELECT a.ru_id, a.ru_amount, a.bill_id,date_format(a.ru_date,'%Y-%m-%d %T' )a.ru_date, a.ru_peo, a.ru_peo_id, a.ru_remark, a.ru_state,
+   b.bill_id,b.bill_name , b.bill_company, b.bill_price, date_format(b.bill_time, '%Y-%m-%d %T' )b.bill_time, b.provider_name, b.bill_state,
+    b.bill_person, b.bill_remark, b.bill_amount, b.bill_money, b.provider_id
+    from ruku_info a LEFT JOIN bill_info  b on a.bill_id=b.bill_id
+     where b.bill_name like CONCAT(CONCAT('%',#{search}),'%')
+     or a.ru_remark like CONCAT(CONCAT('%',#{search}),'%')
+     or a.ru_peo like CONCAT(CONCAT('%',#{search}),'%')
+     limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getRuKuCountSearch" resultType="int">
+    select count(*) from ruku_info where ru_remark like CONCAT(CONCAT('%',#{search}),'%') or a.ru_peo like CONCAT(CONCAT('%',#{search}),'%')
+  </select>
+<select id="getRuKuInfoById" resultMap="BaseResultMap">
+  select * from ruku_info where ru_id=#{RuID}
+</select>
+</mapper>

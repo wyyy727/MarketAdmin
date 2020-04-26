@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    logback pattern详解
+    注意：pattern中的参数都要以%开头
+    1.logger名，length表示限制输出字符数，length不够会采用缩写的形式
+    c{length} / lo{length} / logger{length}
+    2.输出类名
+    C{length} / class{length}
+    3.输出日志行号
+    L / line
+    4.日志内容
+    m / msg / message
+    5.输出日期 日期格式与SimpleDateFormat要求的一致
+    d{pattern} date{pattern} d{pattern, timezone} date{pattern, timezone}
+    6.输出方法名
+    M / method
+    7.输出平台无关的换行符
+    n
+    8.输出日志等级
+    p / le / level
+    9.输出线程名
+    t / thread
+
+ -->
+
+<!--
+    scan：是否监测日志改变
+    scanPeriod：监测时间间隔
+    debug：是否debug logback
+ -->
+<configuration scan="true" scanPeriod="60 seconds" debug="false" >
+    <!-- 上下文名称：取项目名称 -->
+    <contextName>EmpAdmin</contextName>
+    <!-- 时间戳格式 -->
+    <timestamp key="myDateFormat" datePattern="yyyy-MM-dd HH:mm:ss"/>
+    <!-- 属性，以${key}引用 -->
+    <property name="path" value="E:\log"/>
+    <!-- appender代表日志添加的目的地 -->
+    <!-- 控制台appender -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender" >
+        <!--
+                         指定日志格式,一般格式为
+              dateStr [thread]  level className - content
+        -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%p] %logger - %line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 文件appender -->
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>${path}/tlogback.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%p] %logger - %line - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 滚动文件appender(会根据策略生成多个文件) -->
+    <appender name="timeRolling" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${path}/time_rolling.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%p] %logger - %line - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>time_rolling.%d{yyyy-MM-dd_HH:mm:ss}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+    <appender name="sizeRolling" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${path}/size_rolling.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%p] %logger - %line - %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>sizeRolling.%i.log.zip</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>3</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>5MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!-- 为某个包，或某各类特别指定级别和appender,additivity表示是否向上级传递msg -->
+    <logger name="com.lin.learn.tlogback.Special" level="info" additivity="false">
+        <appender-ref ref="stdout"/>
+    </logger>
+
+    <!-- 顶层的logger,为所有的类记录日志 -->
+    <root>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="file"/>
+        <appender-ref ref="timeRolling"/>
+        <appender-ref ref="sizeRolling"/>
+    </root>
+
+</configuration>

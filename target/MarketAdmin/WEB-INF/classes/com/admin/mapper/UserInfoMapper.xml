@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.UserInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.admin.entity.UserInfo" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    <result column="user_pwd" property="userPwd" jdbcType="VARCHAR" />
+    <result column="user_repwd" property="userRepwd" jdbcType="VARCHAR" />
+    <result column="user_realname" property="userRealname" jdbcType="VARCHAR" />
+    <result column="user_power" property="userPower" jdbcType="INTEGER" />
+    <result column="emp_id" property="empId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id
+  </sql>
+  <select id="selectByPrimaryKey" resultType="Map" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from user_info
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="int">
+    delete from user_info
+    where user_id = #{userId}
+  </delete>
+  <insert id="insert" parameterType="com.admin.entity.UserInfo" >
+     insert into user_info (user_name, user_pwd,user_repwd, user_realname, user_power,emp_id)
+    values (#{userName,jdbcType=VARCHAR}, #{userPwd,jdbcType=VARCHAR},
+      #{userRepwd,jdbcType=VARCHAR}, #{userRealname,jdbcType=VARCHAR},
+      #{userPower,jdbcType=INTEGER},#{emp_id,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.admin.entity.UserInfo" >
+    update user_info
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_pwd = #{userPwd,jdbcType=VARCHAR},
+      user_repwd = #{userRepwd,jdbcType=VARCHAR},
+      user_realname = #{userRealname,jdbcType=VARCHAR},
+      user_power = #{userPower,jdbcType=INTEGER}
+      emp_id = {empId,jdbcType=INTEGER}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <select id="getAllUser" parameterType="int" resultType="Map">
+    select * from user_info where 1=1 limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getUserInfoCount" resultType="int">
+    select count(*) from user_info;
+  </select>
+  <select id="Login"  resultType="int" >
+		select count(*) from user_info where user_name = #{admin_name} and user_pwd = #{admin_password};
+	</select>
+  <select id="getAllUserBySearch" parameterType="int" resultType="Map">
+    select <include refid="Base_Column_List" />
+    from user_info where user_name like CONCAT('%',#{search},'%') limit #{colOffset},#{pageSize}
+  </select>
+  <select id="getUserInfoCountBySearch" resultType="int" parameterType="string">
+    select count(*) from user_info where 1=1 and user_name like CONCAT(CONCAT('%',#{search}),'%');
+  </select>
+  <select id="getUserByName" resultType="com.admin.entity.UserInfo">
+    select * from user_info where user_name=#{name}
+  </select>
+</mapper>

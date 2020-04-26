@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.BillInfoMapper" >
+    <resultMap id="BaseResultMap" type="com.admin.entity.BillInfo" >
+        <id column="bill_id" property="billId" jdbcType="INTEGER" />
+        <result column="bill_name" property="billName" jdbcType="VARCHAR" />
+        <result column="bill_company" property="billCompany" jdbcType="INTEGER" />
+        <result column="bill_price" property="billPrice" jdbcType="DOUBLE" />
+        <result column="bill_time" property="billTime" jdbcType="TIMESTAMP" />
+        <result column="provider_name" property="providerName" jdbcType="VARCHAR" />
+        <result column="bill_state" property="billState" jdbcType="VARCHAR" />
+        <result column="bill_person" property="billPerson" jdbcType="VARCHAR" />
+        <result column="bill_remark" property="billRemark" jdbcType="VARCHAR" />
+        <result column="bill_amount" property="billAmount" jdbcType="INTEGER" />
+        <result column="bill_money" property="billMoney" jdbcType="DOUBLE" />
+        <result column="provider_id" property="providerId" jdbcType="INTEGER" />
+    </resultMap>
+
+
+    <sql id="Base_Column_List" >
+    bill_id, bill_name, bill_company, bill_price, bill_time, provider_name, bill_state, 
+    bill_person, bill_remark, bill_amount, bill_money, provider_id
+  </sql>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from bill_info
+        where bill_id = #{billId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bill_info
+    where bill_id = #{billId,jdbcType=INTEGER}
+  </delete>
+
+    <insert id="insert" parameterType="com.admin.entity.BillInfo" >
+    insert into bill_info (bill_name, bill_company,
+      bill_price, bill_time, provider_name,
+      bill_state, bill_person, bill_remark,
+      bill_amount, bill_money, provider_id
+      )
+    values (#{billName,jdbcType=VARCHAR}, #{billCompany,jdbcType=INTEGER},
+      #{billPrice,jdbcType=DOUBLE}, #{billTime,jdbcType=TIMESTAMP}, #{providerName,jdbcType=VARCHAR},
+      #{billState,jdbcType=VARCHAR}, #{billPerson,jdbcType=VARCHAR}, #{billRemark,jdbcType=VARCHAR},
+      #{billAmount,jdbcType=INTEGER}, #{billMoney,jdbcType=DOUBLE}, #{providerId,jdbcType=INTEGER}
+      )
+  </insert>
+    <update id="updateByPrimaryKey" parameterType="com.admin.entity.BillInfo" >
+    update bill_info
+    set bill_name = #{billName},
+      bill_company = #{billCompany},
+      bill_price = #{billPrice},
+      bill_state = #{billState},
+      bill_person = #{billPerson},
+      bill_remark = #{billRemark},
+      bill_amount = #{billAmount},
+      bill_money = #{billMoney},
+      bill_state=#{billState}
+    where bill_id = #{billId}
+  </update>
+
+    <update id="updateBillOne" parameterType="com.admin.entity.BillInfo">
+        update bill_info set bill_name = #{billName}, bill_company = #{billCompany}, bill_price = #{billPrice},
+      bill_state = #{billState},
+      bill_person = #{billPerson},
+      bill_remark = #{billRemark},
+      bill_amount = #{billAmount},
+      bill_money = #{billMoney}
+    where bill_id = #{billId}
+
+    </update>
+    <select id="getAllbillInfo"  parameterType="int" resultType="Map">
+  SELECT * from bill_info a LEFT join provider_info b on a.provider_id=b.pro_id
+  limit #{colOffset},#{pageSize}
+  </select>
+
+    <select id="getAllbillInfoBySearch"  resultType="Map">
+    SELECT * from bill_info a LEFT join provider_info b on a.provider_id=b.pro_id
+    where a.bill_name like CONCAT(CONCAT('%',#{search}),'%')
+    or a.bill_person like CONCAT(CONCAT('%',#{search}),'%')
+    or a.bill_amount like CONCAT(CONCAT('%',#{search}),'%')
+    or b.pro_name like CONCAT(CONCAT('%',#{search}),'%')
+        limit #{colOffset},#{pageSize}
+    </select>
+    <select id="getbillInfoCount" resultType="int">
+  select count(*) from bill_info;
+  </select>
+    <select id="getbillInfoCountBySearch" resultType="int" parameterType="string">
+ select count(*) from bill_info a LEFT join provider_info b on a.provider_id=b.pro_id
+    where a.bill_name like CONCAT(CONCAT('%',#{search}),'%')
+    or a.bill_person like CONCAT(CONCAT('%',#{search}),'%')
+    or a.bill_amount like CONCAT(CONCAT('%',#{search}),'%')
+    or b.pro_name like CONCAT(CONCAT('%',#{search}),'%')
+  </select>
+<update id="updateBillAmount">
+    update bill_info set bill_amount=#{amount} where bill_id=#{billId}
+</update>
+<select id="getBillNameAndId" resultType="Map">
+    select bill_id,bill_name from bill_info where bill_state=1
+</select>
+    <select id="queryId" resultType="Map">
+        select * from provider_info where pro_state = 1
+    </select>
+
+    <select id="finOne" resultType="Map" parameterType="int">
+        select * from  bill_info where bill_id = #{id}
+    </select>
+</mapper>

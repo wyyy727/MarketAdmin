@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.NotifyDao">
+	<insert id="insertOne" parameterType="com.admin.entity.NotifyPage" >
+		insert into NOTIFY(NOID,TITLE,CONTENT,TYPES,NDATE,STARTDATE,ENDDATE,STATE,OPERATOR) values
+		(#{noId},#{title},#{content},#{types},
+		str_to_date(#{nDate},'%Y-%m-%d %T'),
+		str_to_date(#{startDate},'%Y-%m-%d %T'),
+		str_to_date(#{endDate},'%Y-%m-%d %T'),#{state},#{operator})
+	</insert>
+	<sql id="Base_Column_List" >
+    ID, NOID,
+    TITLE,CONTENT,TYPES,
+    date_format(NDATE,'%Y-%m-%d %T')NDATE,
+     date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE,
+      date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR
+  </sql>
+
+	<update id="UpdateNotifyRate" >
+		update NOTIFY set TYPES=#{1} ,
+		startdate = str_to_date(#{2},'%Y-%m-%d %T'),
+		enddate=str_to_date(#{3},'%Y-%m-%d %T'), title =#{4} ,
+		ndate =str_to_date(#{5},'%Y-%m-%d %T'), content =#{6} where ID=#{0}
+	</update>
+
+	<select id="LoadNotifyListMessage" resultType="Map">
+		select <include refid="Base_Column_List"></include> from NOTIFY limit #{colOffset},#{pageSize}
+	</select>
+	
+	   <select id="TotalNotifyListCount" resultType="int">
+		select count(*) from NOTIFY
+	</select>
+	
+	<select id="TotalNotifyListSearchCount" parameterType="string" resultType="int">
+		select count(*)
+        from notify
+        where noid like CONCAT(CONCAT('%',#{0}),'%') or TITLE like CONCAT(CONCAT('%',#{0}),'%')
+		or OPERATOR like CONCAT(CONCAT('%',#{0}),'%')
+	</select>
+	
+	<select id="LoadNotifyListSearchMessage" resultType="Map">
+		select <include refid="Base_Column_List"></include>
+		from NOTIFY where noid like CONCAT(CONCAT('%',#{0}),'%')
+		or TITLE like CONCAT(CONCAT('%',#{0}),'%')
+		or OPERATOR like CONCAT(CONCAT('%',#{0}),'%') limit #{colOffset},#{pageSize}
+	</select>
+	
+	<select id="findById" parameterType="Integer" resultType="com.admin.entity.NotifyPage">
+		select  <include refid="Base_Column_List"></include> from notify where ID = #{id}
+	</select>
+	
+	
+	<select id="LoadNotifyMessageById" parameterType="int" resultType="Map">
+	    select <include refid="Base_Column_List"></include> from NOTIFY
+	    where id=#{id}
+	</select>
+	
+	<select id="queryAll" resultType="com.admin.entity.NotifyPage">
+		  select <include refid="Base_Column_List"></include> from NOTIFY
+	     where state = '1'
+	</select>
+	
+	
+	<update id="updateState" parameterType="Integer">
+		update NOTIFY set state = '0'  where Id =#{Id}
+	</update>
+	
+	<delete id="removeNotify">
+		delete from NOTIFY where Id = #{parseInt}
+	</delete>
+</mapper>

@@ -1,0 +1,1031 @@
+2019-04-26 17:20:17.232 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 115 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-26 17:20:18.045 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-26 17:20:18.235 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillMapper.xml]'
+2019-04-26 17:20:18.252 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderMapper.xml]'
+2019-04-26 17:20:18.274 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserMapper.xml]'
+2019-04-26 17:20:18.373 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-26 17:20:18.381 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e6dad8] was not registered for synchronization because synchronization is not active
+2019-04-26 17:20:18.430 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@72e789cb] will not be managed by Spring
+2019-04-26 17:20:18.433 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@72e789cb]
+2019-04-26 17:20:18.438 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==>  Preparing: select userId, username, password, repassword, sex, age, phone, address, role from user where userId = ? 
+2019-04-26 17:20:18.547 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==> Parameters: 11(Integer)
+2019-04-26 17:20:18.582 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e6dad8]
+2019-04-27 14:00:49.170 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 115 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-27 14:00:49.918 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-27 14:00:50.104 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\BillMapper.xml]'
+2019-04-27 14:00:50.136 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderMapper.xml]'
+2019-04-27 14:00:50.154 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\UserMapper.xml]'
+2019-04-27 14:00:50.231 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-27 14:00:50.236 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ff95fc6] was not registered for synchronization because synchronization is not active
+2019-04-27 14:00:50.273 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@af9a89f] will not be managed by Spring
+2019-04-27 14:00:50.275 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@af9a89f]
+2019-04-27 14:00:50.282 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==>  Preparing: select userId, username, password, repassword, sex, age, phone, address, role from user where userId = ? 
+2019-04-27 14:00:50.381 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==> Parameters: 11(Integer)
+2019-04-27 14:00:50.434 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ff95fc6]
+2019-04-27 14:01:10.973 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 115 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-27 14:01:11.624 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-27 14:01:11.726 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\BillMapper.xml]'
+2019-04-27 14:01:11.745 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderMapper.xml]'
+2019-04-27 14:01:11.759 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\UserMapper.xml]'
+2019-04-27 14:01:11.819 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-27 14:01:11.825 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9d1a267] was not registered for synchronization because synchronization is not active
+2019-04-27 14:01:11.860 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@22367b8] will not be managed by Spring
+2019-04-27 14:01:11.861 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@22367b8]
+2019-04-27 14:01:11.866 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==>  Preparing: select userId, username, password, repassword, sex, age, phone, address, role from user where userId = ? 
+2019-04-27 14:01:11.944 [main] [DEBUG] com.admin.dao.UserMapper.selectByPrimaryKey - 132 - ==> Parameters: 11(Integer)
+2019-04-27 14:01:11.961 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9d1a267]
+2019-04-27 19:05:31.938 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 115 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-27 19:05:32.509 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-27 19:05:32.641 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\BillMapper.xml]'
+2019-04-27 19:05:32.660 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-27 19:05:32.677 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderMapper.xml]'
+2019-04-27 19:05:32.698 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-27 19:05:32.719 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\work\workspace\MarketAdmin\target\classes\com\admin\mapper\UserMapper.xml]'
+2019-04-27 19:05:32.805 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-27 19:05:32.809 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@290aeb20] was not registered for synchronization because synchronization is not active
+2019-04-27 19:05:32.840 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@30501e60] will not be managed by Spring
+2019-04-27 19:05:32.842 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 132 - ooo Using Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@30501e60]
+2019-04-27 19:05:32.845 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 132 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-27 19:05:32.926 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 132 - ==> Parameters: 1011(Integer)
+2019-04-27 19:05:32.943 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@290aeb20]
+2019-04-28 09:19:00.434 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 09:19:02.030 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 09:19:02.228 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-28 09:19:02.244 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-28 09:19:02.291 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-28 09:19:02.296 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4fc2bf] was not registered for synchronization because synchronization is not active
+2019-04-28 09:19:02.304 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@24e08d59] will not be managed by Spring
+2019-04-28 09:19:02.309 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-28 09:19:02.406 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1011(Integer)
+2019-04-28 09:19:02.459 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-28 09:19:02.461 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7c4fc2bf]
+2019-04-28 09:43:03.401 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 09:43:04.275 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 09:43:04.429 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 09:43:04.450 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 09:43:04.464 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-28 09:43:04.482 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-28 09:43:04.497 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-28 09:43:04.509 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-28 09:43:04.557 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-28 09:43:04.565 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e0cff20] was not registered for synchronization because synchronization is not active
+2019-04-28 09:43:04.577 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@14bf57b2] will not be managed by Spring
+2019-04-28 09:43:04.583 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-28 09:43:04.670 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1011(Integer)
+2019-04-28 09:43:04.691 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-28 09:43:04.692 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e0cff20]
+2019-04-28 16:08:43.598 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:08:44.440 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:08:44.645 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:08:44.664 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:08:58.004 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:08:58.885 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:08:59.072 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:08:59.092 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:40.402 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:15:41.122 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:41.827 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:41.863 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:41.887 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:41.915 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:41.936 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:41.954 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:41.974 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:41.995 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:42.010 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:42.030 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:42.047 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:42.062 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:42.078 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:42.097 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:42.113 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:42.142 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:42.166 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:15:42.194 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:15:42.213 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:15:42.223 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:17:08.884 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:17:09.519 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:17:09.847 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:17:09.893 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:33.953 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:22:34.601 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:34.847 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:34.886 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:34.901 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:34.919 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:34.963 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:35.009 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:35.048 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:35.081 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:35.096 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:35.126 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:35.140 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:35.159 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:35.325 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:35.343 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:35.360 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:35.380 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:35.452 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:22:35.468 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:22:35.485 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:22:35.499 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:08.614 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:25:09.305 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.550 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.591 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.614 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.641 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.663 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.681 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.698 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.717 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.733 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.749 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.784 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.831 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.849 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.871 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.886 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.899 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.914 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:25:09.929 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:25:09.941 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:25:09.956 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:06.310 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:26:06.994 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.221 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.286 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.308 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.327 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.348 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.368 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.388 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.408 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.426 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.482 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.502 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.520 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.537 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.551 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.565 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.580 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.594 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:26:07.608 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:26:07.623 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:26:07.634 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:28:18.991 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:28:20.128 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:28:20.286 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:28:20.313 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:46.113 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:31:47.072 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.243 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.271 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:47.286 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.299 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.313 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:47.325 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.336 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.349 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:47.361 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.373 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.392 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:47.403 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.433 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.461 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:31:47.482 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:31:47.514 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:31:47.541 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:46:03.257 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:46:03.928 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:46:04.122 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:46:04.147 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 16:47:28.038 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 16:47:28.847 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 16:47:28.995 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 16:47:29.022 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 18:30:02.151 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 18:30:02.987 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 18:30:03.320 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 18:30:03.377 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 18:40:45.913 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 18:40:46.604 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 18:40:46.745 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 18:40:46.766 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 18:48:56.308 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 18:48:57.077 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 18:48:57.226 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 18:48:57.241 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-28 18:51:48.896 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-28 18:51:49.603 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-28 18:51:49.758 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-28 18:51:49.774 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:36:40.000 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:36:40.849 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:36:41.098 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:36:41.122 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:42:52.638 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:42:53.347 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:42:53.499 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:42:53.514 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:47:02.453 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:47:03.762 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:47:03.922 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:47:03.937 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:48:36.501 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:48:37.570 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:48:37.725 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:48:37.740 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:48:52.112 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:48:53.213 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:48:53.383 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:48:53.402 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:54:38.758 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:54:39.954 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:54:40.149 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:54:40.175 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:54:40.197 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 09:54:40.206 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 09:54:40.221 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 09:54:40.239 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 09:54:40.263 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 09:54:40.344 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 09:54:40.349 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028] was not registered for synchronization because synchronization is not active
+2019-04-29 09:54:40.360 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@889d9e8] will not be managed by Spring
+2019-04-29 09:54:40.367 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-29 09:54:40.492 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1010(Integer)
+2019-04-29 09:54:40.530 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-29 09:54:40.531 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49cf9028]
+2019-04-29 09:55:29.476 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:55:30.259 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:55:30.417 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:55:30.435 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:55:30.458 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 09:55:30.466 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 09:55:30.479 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 09:55:30.490 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 09:55:30.502 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 09:55:30.561 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 09:55:30.566 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde4f40] was not registered for synchronization because synchronization is not active
+2019-04-29 09:55:30.574 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@67440de6] will not be managed by Spring
+2019-04-29 09:55:30.580 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-29 09:55:30.673 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-29 09:55:30.713 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-29 09:55:30.714 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fde4f40]
+2019-04-29 09:55:53.476 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 09:55:54.280 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 09:55:54.575 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 09:55:54.605 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 09:55:54.634 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 09:55:54.648 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 09:55:54.676 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 09:55:54.725 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 09:55:54.786 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 09:55:55.112 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 09:55:55.137 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32130e61] was not registered for synchronization because synchronization is not active
+2019-04-29 09:55:55.178 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5a8c93] will not be managed by Spring
+2019-04-29 09:55:55.226 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-29 09:55:55.430 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-29 09:55:55.510 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-29 09:55:55.512 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32130e61]
+2019-04-29 10:45:03.886 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 10:45:04.734 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 10:45:04.933 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 10:45:04.948 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 10:45:04.964 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 10:45:04.972 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 10:45:04.985 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 10:45:04.998 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 10:45:05.009 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 10:45:05.024 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 10:45:05.107 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 10:45:05.113 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787f32b7] was not registered for synchronization because synchronization is not active
+2019-04-29 10:45:05.121 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6c65860d] will not be managed by Spring
+2019-04-29 10:45:05.128 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-29 10:45:05.210 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-29 10:45:05.245 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-29 10:45:05.246 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787f32b7]
+2019-04-29 10:46:20.042 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 10:46:21.214 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 10:46:21.372 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 10:46:21.397 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 10:46:21.416 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 10:46:21.424 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 10:46:21.440 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 10:46:21.452 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 10:46:21.464 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 10:46:21.478 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 10:46:21.553 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 10:46:21.565 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a52ca2e] was not registered for synchronization because synchronization is not active
+2019-04-29 10:46:21.574 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60737b23] will not be managed by Spring
+2019-04-29 10:46:21.593 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-29 10:46:21.732 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 41(Integer)
+2019-04-29 10:46:21.765 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-29 10:46:21.767 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a52ca2e]
+2019-04-29 10:47:00.875 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 10:47:02.097 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 10:47:02.274 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 10:47:02.289 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 10:47:02.306 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 10:47:02.323 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 10:47:02.349 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 10:47:02.361 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 10:47:02.373 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 10:47:02.392 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 10:47:02.465 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 10:47:02.471 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a52ca2e] was not registered for synchronization because synchronization is not active
+2019-04-29 10:47:02.480 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@60737b23] will not be managed by Spring
+2019-04-29 10:47:02.496 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-29 10:47:02.613 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 41(Integer)
+2019-04-29 10:47:02.651 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-29 10:47:02.652 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a52ca2e]
+2019-04-29 10:47:55.793 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 10:47:56.848 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 10:47:57.032 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 10:47:57.049 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 10:47:57.065 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 10:47:57.073 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 10:47:57.087 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 10:47:57.100 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 10:47:57.133 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 10:47:57.149 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 10:47:57.249 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 10:47:57.254 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787f32b7] was not registered for synchronization because synchronization is not active
+2019-04-29 10:47:57.262 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6c65860d] will not be managed by Spring
+2019-04-29 10:47:57.268 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-29 10:47:57.554 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 65(Integer)
+2019-04-29 10:47:57.580 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-29 10:47:57.582 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@787f32b7]
+2019-04-29 11:04:01.979 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 11:04:02.680 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 11:04:02.934 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 11:04:02.966 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 11:04:02.991 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 11:04:03.005 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 11:04:03.033 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 11:04:03.061 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 11:04:03.078 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 11:04:03.099 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 11:04:03.270 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 11:04:03.276 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f038248] was not registered for synchronization because synchronization is not active
+2019-04-29 11:04:03.290 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71904469] will not be managed by Spring
+2019-04-29 11:04:03.334 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-29 11:04:03.631 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 65(Integer)
+2019-04-29 11:04:03.708 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-29 11:04:03.710 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f038248]
+2019-04-29 14:10:48.840 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-29 14:10:49.541 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-29 14:10:49.749 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-29 14:10:49.766 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-29 14:10:49.783 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-29 14:10:49.793 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-29 14:10:49.808 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-29 14:10:49.836 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-29 14:10:49.848 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-29 14:10:49.861 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-29 14:10:49.987 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-29 14:10:49.993 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@acf859d] was not registered for synchronization because synchronization is not active
+2019-04-29 14:10:50.003 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@2125ad3] will not be managed by Spring
+2019-04-29 14:10:50.029 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-29 14:10:50.143 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1010(Integer)
+2019-04-29 14:10:50.165 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-29 14:10:50.167 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@acf859d]
+2019-04-30 09:11:00.264 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:11:01.119 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:11:01.459 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:11:01.477 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:11:01.563 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:11:01.597 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:11:01.621 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:11:01.676 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:11:01.695 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:11:01.805 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:11:01.975 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:11:01.981 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf283e1] was not registered for synchronization because synchronization is not active
+2019-04-30 09:11:01.994 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7186333e] will not be managed by Spring
+2019-04-30 09:11:02.002 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-30 09:11:02.129 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1010(Integer)
+2019-04-30 09:11:02.155 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-30 09:11:02.157 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf283e1]
+2019-04-30 09:11:18.151 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:11:19.002 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:11:19.162 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:11:19.177 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:11:19.192 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:11:19.201 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:11:19.214 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:11:19.230 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:11:19.249 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:11:19.266 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:11:19.360 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:11:19.365 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf283e1] was not registered for synchronization because synchronization is not active
+2019-04-30 09:11:19.373 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7186333e] will not be managed by Spring
+2019-04-30 09:11:19.382 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-30 09:11:19.471 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-30 09:11:19.500 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-30 09:11:19.502 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cf283e1]
+2019-04-30 09:11:28.945 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:11:30.136 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:11:30.352 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:11:30.367 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:11:30.382 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:11:30.390 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:11:30.403 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:11:30.416 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:11:30.430 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:11:30.444 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:11:30.536 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:11:30.542 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d000e80] was not registered for synchronization because synchronization is not active
+2019-04-30 09:11:30.552 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@10ee04df] will not be managed by Spring
+2019-04-30 09:11:30.561 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-30 09:11:30.675 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 65(Integer)
+2019-04-30 09:11:30.699 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-30 09:11:30.701 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d000e80]
+2019-04-30 09:47:36.389 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:47:37.234 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:47:37.398 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:47:37.423 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:47:37.439 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:47:37.448 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:47:37.464 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:47:37.491 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:47:37.504 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:47:37.518 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:49:39.817 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:49:40.527 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:49:40.864 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:49:40.901 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:49:40.916 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:49:40.923 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:49:40.949 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:49:40.974 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:49:41.007 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:49:41.036 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:50:52.140 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:50:53.017 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:50:53.182 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:50:53.195 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:50:53.211 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:50:53.219 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:50:53.238 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:50:53.254 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:50:53.290 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:50:53.319 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:52:41.269 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:52:42.545 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:52:42.755 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:52:42.773 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:52:42.792 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:52:42.805 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:52:42.821 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:52:42.834 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:52:42.847 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:52:42.864 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:52:42.953 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:52:42.958 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287] was not registered for synchronization because synchronization is not active
+2019-04-30 09:52:42.972 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5c10285a] will not be managed by Spring
+2019-04-30 09:52:42.980 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 09:52:43.070 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 09:52:43.105 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 09:52:43.106 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287]
+2019-04-30 09:53:32.344 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:53:33.028 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:53:33.200 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:53:33.217 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:53:33.240 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:53:33.248 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:53:33.264 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:53:33.277 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:53:33.294 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:53:33.318 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:53:51.914 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:53:52.730 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:53:52.918 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:53:52.946 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:53:52.960 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:53:52.968 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:53:52.982 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:53:52.994 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:53:53.007 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:53:53.023 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:53:53.108 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:53:53.113 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287] was not registered for synchronization because synchronization is not active
+2019-04-30 09:53:53.125 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5c10285a] will not be managed by Spring
+2019-04-30 09:53:53.130 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 09:53:53.228 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 09:53:53.247 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 09:53:53.248 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287]
+2019-04-30 09:54:55.981 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:54:56.783 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:54:56.960 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:54:56.994 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:54:57.011 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:54:57.021 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:54:57.044 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:54:57.055 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:54:57.088 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:54:57.119 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:55:37.658 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:55:38.496 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:55:38.647 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:55:38.661 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:55:38.674 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:55:38.682 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:55:38.695 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:55:38.708 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:55:38.721 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:55:38.734 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:55:38.828 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:55:38.833 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287] was not registered for synchronization because synchronization is not active
+2019-04-30 09:55:38.843 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5c10285a] will not be managed by Spring
+2019-04-30 09:55:38.850 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 09:55:38.939 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 09:55:38.960 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 09:55:38.962 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e4d2287]
+2019-04-30 09:55:55.014 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:55:56.112 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:55:56.275 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:55:56.290 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:55:56.305 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:55:56.313 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:55:56.344 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:55:56.356 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:55:56.370 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:55:56.384 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:56:26.326 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:56:27.255 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:56:27.475 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:56:27.495 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:56:27.560 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:56:27.568 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:56:27.583 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:56:27.596 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:56:27.609 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:56:27.622 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:56:27.705 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:56:27.710 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f4b840d] was not registered for synchronization because synchronization is not active
+2019-04-30 09:56:27.721 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6b667cb3] will not be managed by Spring
+2019-04-30 09:56:27.728 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 09:56:27.834 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 09:56:27.861 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 09:56:27.862 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f4b840d]
+2019-04-30 09:56:42.427 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 09:56:43.056 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 09:56:43.348 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 09:56:43.381 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 09:56:43.441 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 09:56:43.494 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 09:56:43.584 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 09:56:43.625 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 09:56:43.648 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 09:56:43.702 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 09:56:44.051 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 09:56:44.059 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2643d762] was not registered for synchronization because synchronization is not active
+2019-04-30 09:56:44.074 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@e84fb85] will not be managed by Spring
+2019-04-30 09:56:44.097 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 09:56:44.290 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 09:56:44.443 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 09:56:44.446 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2643d762]
+2019-04-30 10:07:30.374 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 10:07:31.334 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 10:07:31.496 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 10:07:31.511 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 10:07:31.534 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 10:07:31.543 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 10:07:31.557 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 10:07:31.569 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 10:07:31.582 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 10:07:31.594 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 10:07:31.682 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 10:07:31.688 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@557286ad] was not registered for synchronization because synchronization is not active
+2019-04-30 10:07:31.703 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@26722665] will not be managed by Spring
+2019-04-30 10:07:31.709 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 10:07:31.810 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 10:07:31.832 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 10:07:31.834 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@557286ad]
+2019-04-30 10:08:04.188 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 10:08:05.224 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 10:08:05.454 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 10:08:05.483 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 10:08:05.500 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 10:08:05.511 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 10:08:05.525 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 10:08:05.539 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 10:08:05.556 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 10:08:05.571 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 10:08:05.685 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 10:08:05.695 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b10a26d] was not registered for synchronization because synchronization is not active
+2019-04-30 10:08:05.707 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@7d0614f] will not be managed by Spring
+2019-04-30 10:08:05.715 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 10:08:05.811 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 10:08:05.834 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 10:08:05.836 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b10a26d]
+2019-04-30 10:13:25.510 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 10:13:26.206 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 10:13:26.560 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 10:13:26.610 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 10:13:26.663 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 10:13:26.679 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 10:13:26.737 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 10:13:26.781 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 10:13:26.834 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 10:13:26.878 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\workspace\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 10:13:27.250 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 10:13:27.259 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@216e0771] was not registered for synchronization because synchronization is not active
+2019-04-30 10:13:27.278 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@59f93db8] will not be managed by Spring
+2019-04-30 10:13:27.326 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 10:13:27.548 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 10:13:27.717 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 10:13:27.721 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@216e0771]
+2019-04-30 14:24:03.975 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 14:24:05.032 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 14:24:05.212 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 14:24:05.230 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 14:24:05.253 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 14:24:05.262 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 14:24:05.287 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 14:24:05.302 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 14:24:05.318 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 14:24:05.332 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 14:24:05.426 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 14:24:05.435 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935] was not registered for synchronization because synchronization is not active
+2019-04-30 14:24:05.455 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@69fa8e76] will not be managed by Spring
+2019-04-30 14:24:05.466 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-30 14:24:05.584 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1010(Integer)
+2019-04-30 14:24:05.605 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-30 14:24:05.607 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935]
+2019-04-30 15:21:48.651 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:21:49.270 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:21:49.442 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:21:49.464 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:21:49.488 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:21:49.501 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:21:49.524 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:21:49.539 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:21:49.558 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:21:49.577 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:21:49.785 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:21:49.807 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84] was not registered for synchronization because synchronization is not active
+2019-04-30 15:21:49.836 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@299270eb] will not be managed by Spring
+2019-04-30 15:21:49.852 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-30 15:21:49.981 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-30 15:21:50.049 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-30 15:21:50.055 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84]
+2019-04-30 15:22:05.938 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:22:06.523 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:22:06.660 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:22:06.676 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:22:06.689 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:22:06.696 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:22:06.711 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:22:06.726 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:22:06.749 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:22:06.777 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:22:06.938 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:22:06.951 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5] was not registered for synchronization because synchronization is not active
+2019-04-30 15:22:06.972 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6bf13698] will not be managed by Spring
+2019-04-30 15:22:06.987 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==>  Preparing: select ID, NOID, TITLE,CONTENT,TYPES, date_format(NDATE,'%Y-%m-%d %T')NDATE, date_format(STARTDATE,'%Y-%m-%d %T')STARTDATE, date_format(ENDDATE,'%Y-%m-%d %T')ENDDATE,STATE, OPERATOR from notify where ID = ? 
+2019-04-30 15:22:07.097 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - ==> Parameters: 65(Integer)
+2019-04-30 15:22:07.127 [main] [DEBUG] com.admin.dao.NotifyDao.findById - 145 - <==      Total: 1
+2019-04-30 15:22:07.129 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5]
+2019-04-30 15:22:25.010 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:22:25.667 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:22:25.837 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:22:25.853 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:22:25.880 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:22:25.891 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:22:25.913 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:22:25.929 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:22:25.949 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:22:25.966 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:22:26.074 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:22:26.081 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84] was not registered for synchronization because synchronization is not active
+2019-04-30 15:22:26.101 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@299270eb] will not be managed by Spring
+2019-04-30 15:22:26.108 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 15:22:26.185 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 15:22:26.209 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 15:22:26.210 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84]
+2019-04-30 15:22:37.660 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:22:38.282 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:22:38.427 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:22:38.442 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:22:38.458 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:22:38.466 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:22:38.481 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:22:38.502 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:22:38.521 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:22:38.542 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:22:38.687 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:22:38.695 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@507b79f7] was not registered for synchronization because synchronization is not active
+2019-04-30 15:22:38.708 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f446158] will not be managed by Spring
+2019-04-30 15:22:38.714 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 15:22:38.812 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 15:22:38.830 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 15:22:38.832 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@507b79f7]
+2019-04-30 15:23:46.294 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:23:46.977 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:23:47.132 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:23:47.156 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:23:47.170 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:23:47.181 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:23:47.199 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:23:47.219 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:23:47.244 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:23:47.271 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:23:47.426 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:23:47.447 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f72d88] was not registered for synchronization because synchronization is not active
+2019-04-30 15:23:47.465 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3b90a30a] will not be managed by Spring
+2019-04-30 15:23:47.473 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info 
+2019-04-30 15:23:47.599 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-04-30 15:23:47.624 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-04-30 15:23:47.626 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f72d88]
+2019-04-30 15:25:20.965 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 15:25:21.581 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 15:25:21.720 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 15:25:21.734 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 15:25:21.755 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 15:25:21.761 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 15:25:21.773 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 15:25:21.786 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 15:25:21.800 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 15:25:21.829 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 15:25:21.979 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 15:25:21.983 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5b49] was not registered for synchronization because synchronization is not active
+2019-04-30 15:25:21.997 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@bdd2027] will not be managed by Spring
+2019-04-30 15:25:22.006 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info 
+2019-04-30 15:25:22.101 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-04-30 15:25:22.122 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-04-30 15:25:22.123 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5b49]
+2019-04-30 16:08:03.796 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 16:08:04.470 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 16:08:04.733 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 16:08:04.770 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 16:08:04.809 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 16:08:04.818 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 16:08:04.840 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 16:08:04.856 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 16:08:04.883 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 16:08:04.902 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 16:08:05.127 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 16:08:05.136 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d] was not registered for synchronization because synchronization is not active
+2019-04-30 16:08:05.155 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@31f20c9f] will not be managed by Spring
+2019-04-30 16:08:05.164 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==>  Preparing: select emp_no,emp_name from emp_info 
+2019-04-30 16:08:05.278 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - ==> Parameters: 
+2019-04-30 16:08:05.314 [main] [DEBUG] com.admin.dao.EmpInfoMapper.getEmpNameAndId - 145 - <==      Total: 1
+2019-04-30 16:08:05.316 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d]
+2019-04-30 16:28:08.435 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 16:28:09.332 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 16:28:09.544 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 16:28:09.568 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 16:28:09.593 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 16:28:09.605 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 16:28:09.625 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 16:28:09.650 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 16:28:09.669 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 16:28:09.692 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 16:28:09.913 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 16:28:09.923 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5] was not registered for synchronization because synchronization is not active
+2019-04-30 16:28:09.934 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6bf13698] will not be managed by Spring
+2019-04-30 16:28:09.942 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info 
+2019-04-30 16:28:10.029 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-04-30 16:28:10.062 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-04-30 16:28:10.064 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5]
+2019-04-30 21:08:17.444 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 21:08:18.000 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 21:08:18.163 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 21:08:18.179 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 21:08:18.201 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 21:08:18.215 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 21:08:18.232 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 21:08:18.247 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 21:08:18.267 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 21:08:18.285 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 21:08:18.394 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 21:08:18.399 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5] was not registered for synchronization because synchronization is not active
+2019-04-30 21:08:18.408 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@6bf13698] will not be managed by Spring
+2019-04-30 21:08:18.415 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info 
+2019-04-30 21:08:18.494 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-04-30 21:08:18.515 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-04-30 21:08:18.517 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@573284a5]
+2019-04-30 21:08:38.353 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 21:08:39.062 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 21:08:39.215 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 21:08:39.229 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 21:08:39.246 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 21:08:39.253 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 21:08:39.269 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 21:08:39.285 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 21:08:39.299 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 21:08:39.315 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 21:08:39.417 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 21:08:39.425 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d901aa] was not registered for synchronization because synchronization is not active
+2019-04-30 21:08:39.436 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@15e0fe05] will not be managed by Spring
+2019-04-30 21:08:39.442 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-04-30 21:08:39.519 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-04-30 21:08:39.542 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-04-30 21:08:39.544 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54d901aa]
+2019-04-30 21:34:58.642 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-04-30 21:34:59.627 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-04-30 21:34:59.851 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-04-30 21:34:59.881 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-04-30 21:34:59.903 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-04-30 21:34:59.911 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-04-30 21:34:59.930 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-04-30 21:34:59.950 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-04-30 21:34:59.972 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-04-30 21:35:00.000 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-04-30 21:35:00.182 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-04-30 21:35:00.191 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6601cc93] was not registered for synchronization because synchronization is not active
+2019-04-30 21:35:00.203 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5432c277] will not be managed by Spring
+2019-04-30 21:35:00.211 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==>  Preparing: select user_id, user_name, user_pwd, user_repwd, user_realname, user_power, emp_id from user_info where user_id = ? 
+2019-04-30 21:35:00.345 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - ==> Parameters: 1010(Integer)
+2019-04-30 21:35:00.375 [main] [DEBUG] com.admin.dao.UserInfoMapper.selectByPrimaryKey - 145 - <==      Total: 1
+2019-04-30 21:35:00.377 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6601cc93]
+2019-05-01 16:21:24.384 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:21:25.208 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:21:25.408 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:21:25.423 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:21:25.444 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:21:25.455 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:21:25.470 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:21:25.488 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:21:25.514 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:21:25.538 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:21:25.710 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:21:25.718 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84] was not registered for synchronization because synchronization is not active
+2019-05-01 16:21:25.730 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@299270eb] will not be managed by Spring
+2019-05-01 16:21:25.737 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select chu_id, chu_amount, bill_id, chu_date, chu_peo, chu_pro_id, chu_remark, chu_state from chuku_info where chu_id=? 
+2019-05-01 16:21:25.847 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:21:25.869 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:21:25.871 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3fbfbf84]
+2019-05-01 16:22:10.518 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:22:11.090 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:22:11.250 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:22:11.266 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:22:11.284 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:22:11.294 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:22:11.312 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:22:11.325 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:22:11.342 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:22:11.361 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:22:11.507 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:22:11.515 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d] was not registered for synchronization because synchronization is not active
+2019-05-01 16:22:11.531 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@31f20c9f] will not be managed by Spring
+2019-05-01 16:22:11.543 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select chu_id, chu_amount, bill_id, chu_date, chu_peo, chu_pro_id, chu_remark, chu_state from chuku_info where chu_id=? 
+2019-05-01 16:22:11.669 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:22:11.697 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:22:11.700 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d]
+2019-05-01 16:22:45.686 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:22:46.315 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:22:46.522 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:22:46.551 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:22:46.569 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:22:46.577 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:22:46.603 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:22:46.621 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:22:46.641 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:22:46.664 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:22:46.916 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:22:46.926 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5b49] was not registered for synchronization because synchronization is not active
+2019-05-01 16:22:46.945 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@bdd2027] will not be managed by Spring
+2019-05-01 16:22:46.957 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select * from chuku_info where chu_id=? 
+2019-05-01 16:22:47.101 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:22:47.135 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:22:47.138 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@87b5b49]
+2019-05-01 16:24:33.052 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:24:33.543 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:24:33.676 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:24:33.689 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:24:33.701 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:24:33.708 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:24:33.719 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:24:33.730 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:24:33.746 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:24:33.760 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:24:33.877 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:24:33.884 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f72d88] was not registered for synchronization because synchronization is not active
+2019-05-01 16:24:33.893 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@3b90a30a] will not be managed by Spring
+2019-05-01 16:24:33.898 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select * from chuku_info where chu_id=? 
+2019-05-01 16:24:33.996 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:24:34.018 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:24:34.020 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23f72d88]
+2019-05-01 16:25:26.164 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:25:26.634 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:25:26.769 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:25:26.782 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:25:26.793 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:25:26.801 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:25:26.814 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:25:26.825 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:25:26.842 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:25:26.861 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:25:26.988 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:25:26.992 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6601cc93] was not registered for synchronization because synchronization is not active
+2019-05-01 16:25:26.998 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@5432c277] will not be managed by Spring
+2019-05-01 16:25:27.003 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info where pro_state=1 
+2019-05-01 16:25:27.081 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-05-01 16:25:27.101 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-05-01 16:25:27.103 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6601cc93]
+2019-05-01 16:25:34.284 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:25:34.764 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:25:34.910 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:25:34.924 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:25:34.939 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:25:34.946 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:25:34.960 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:25:34.975 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:25:34.992 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:25:35.010 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:25:35.137 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:25:35.144 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935] was not registered for synchronization because synchronization is not active
+2019-05-01 16:25:35.153 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@69fa8e76] will not be managed by Spring
+2019-05-01 16:25:35.160 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select * from chuku_info where chu_id=? 
+2019-05-01 16:25:35.255 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:25:35.274 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:25:35.276 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935]
+2019-05-01 16:26:31.121 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:26:31.711 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:26:31.870 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:26:31.886 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:26:31.901 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:26:31.908 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:26:31.929 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:26:31.945 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:26:31.966 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:26:31.987 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:26:32.148 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:26:32.161 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935] was not registered for synchronization because synchronization is not active
+2019-05-01 16:26:32.176 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@69fa8e76] will not be managed by Spring
+2019-05-01 16:26:32.187 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select * from chuku_info where chu_id=? 
+2019-05-01 16:26:32.330 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:26:32.368 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:26:32.371 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4bafe935]
+2019-05-01 16:27:21.632 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-01 16:27:23.115 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-01 16:27:23.759 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-01 16:27:23.791 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-01 16:27:23.816 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-01 16:27:23.831 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-01 16:27:23.882 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-01 16:27:23.907 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-01 16:27:23.935 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-01 16:27:23.961 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-01 16:27:24.387 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-01 16:27:24.410 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76ae986] was not registered for synchronization because synchronization is not active
+2019-05-01 16:27:24.451 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@b9501e] will not be managed by Spring
+2019-05-01 16:27:24.473 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==>  Preparing: select * from chuku_info where chu_id=? 
+2019-05-01 16:27:24.844 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - ==> Parameters: 7(Integer)
+2019-05-01 16:27:24.922 [main] [DEBUG] com.admin.dao.ChuKuInfoMapper.getChuKuById - 145 - <==      Total: 1
+2019-05-01 16:27:24.926 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76ae986]
+2019-05-09 22:51:31.992 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-09 22:51:32.735 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-09 22:51:32.909 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-09 22:51:32.929 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-09 22:51:32.948 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-09 22:51:32.960 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-09 22:51:32.978 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-09 22:51:32.991 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-09 22:51:33.009 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-09 22:51:33.031 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-09 22:51:33.142 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-09 22:51:33.148 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d] was not registered for synchronization because synchronization is not active
+2019-05-09 22:51:33.158 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@31f20c9f] will not be managed by Spring
+2019-05-09 22:51:33.164 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info where pro_state=1 
+2019-05-09 22:51:33.282 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-05-09 22:51:33.301 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-05-09 22:51:33.302 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d]
+2019-05-09 22:52:38.407 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-09 22:52:38.913 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-09 22:52:39.051 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-09 22:52:39.064 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-09 22:52:39.076 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-09 22:52:39.083 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-09 22:52:39.098 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-09 22:52:39.111 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-09 22:52:39.128 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-09 22:52:39.146 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-09 22:52:39.253 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-09 22:52:39.258 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365a6a43] was not registered for synchronization because synchronization is not active
+2019-05-09 22:52:39.267 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@504e1599] will not be managed by Spring
+2019-05-09 22:52:39.273 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==>  Preparing: select pro_id, pro_name from provider_info where pro_state=1 
+2019-05-09 22:52:39.363 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - ==> Parameters: 
+2019-05-09 22:52:39.384 [main] [DEBUG] com.admin.dao.ProviderInfoMapper.getProviderNameAndId - 145 - <==      Total: 1
+2019-05-09 22:52:39.385 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@365a6a43]
+2019-05-09 22:52:56.661 [main] [DEBUG] org.apache.ibatis.logging.LogFactory - 135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-05-09 22:52:57.159 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 358 - Property 'configLocation' not specified, using default MyBatis Configuration
+2019-05-09 22:52:57.287 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\BillInfoMapper.xml]'
+2019-05-09 22:52:57.302 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ChuKuInfoMapper.xml]'
+2019-05-09 22:52:57.313 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\EmpInfoMapper.xml]'
+2019-05-09 22:52:57.319 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\LocationMapper.xml]'
+2019-05-09 22:52:57.332 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\NotifyMapper.xml]'
+2019-05-09 22:52:57.344 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\ProviderInfoMapper.xml]'
+2019-05-09 22:52:57.361 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\RuKuInfoMapper.xml]'
+2019-05-09 22:52:57.377 [main] [DEBUG] org.mybatis.spring.SqlSessionFactoryBean - 468 - Parsed mapper file: 'file [E:\xuexi\ideaspace\study\MarketAdmin\target\classes\com\admin\mapper\UserInfoMapper.xml]'
+2019-05-09 22:52:57.512 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 106 - Creating a new SqlSession
+2019-05-09 22:52:57.518 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 142 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d] was not registered for synchronization because synchronization is not active
+2019-05-09 22:52:57.531 [main] [DEBUG] org.mybatis.spring.transaction.SpringManagedTransaction - 85 - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@31f20c9f] will not be managed by Spring
+2019-05-09 22:52:57.537 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==>  Preparing: select provinceID ,province from ad_province 
+2019-05-09 22:52:57.615 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - ==> Parameters: 
+2019-05-09 22:52:57.638 [main] [DEBUG] com.admin.dao.LocationDao.LoadProvince - 145 - <==      Total: 34
+2019-05-09 22:52:57.640 [main] [DEBUG] org.mybatis.spring.SqlSessionUtils - 170 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a7a965d]

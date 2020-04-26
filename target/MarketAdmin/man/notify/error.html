@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>5秒后返回登录页面</title>
+		<script src="../../lib/jQuery/jquery.min.js"></script>
+		<!-- <script>
+			//使用匿名函数方法
+			function countDown(){
+				
+				var time = document.getElementById("Time");
+				//alert(time.innerHTML);
+				//获取到id为time标签中的内容，现进行判断
+				if(time.innerHTML == 0){
+					//等于0时清除计时
+					    var Cwin= window.open('../../man/zt_login.html','','status=yes,toolbar=no,menubar=no,location=no,resizable=yes,scrollbars=yes');
+					    Cwin.moveTo(0,0)
+					    Cwin.resizeTo(screen.availWidth,screen.availHeight);
+					    window.opener=null;
+					    window.open('','_top')
+					    window.close()
+				}else{
+					time.innerHTML = time.innerHTML-1;
+				}
+			}
+			//1000毫秒调用一次
+			window.setInterval("countDown()",1000);
+			
+			 
+		</script> -->
+	</head>
+	<body>
+		<!-- <span>登录失效</span><p id="Time">5</p><span>秒后自动跳转到<a href='../../man/zt_login.html'>登陆</a></span> -->
+		<span>登录失效，请重新登陆</span>
+	</body>
+</html>

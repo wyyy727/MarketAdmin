@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.admin.dao.BillMapper" >
+  <resultMap id="BaseResultMap" type="com.admin.entity.Bill" >
+    <id column="billId" property="billid" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="number" property="number" jdbcType="INTEGER" />
+    <result column="money" property="money" jdbcType="INTEGER" />
+    <result column="isPay" property="ispay" jdbcType="VARCHAR" />
+    <result column="providername" property="providername" jdbcType="VARCHAR" />
+    <result column="describe" property="describe" jdbcType="VARCHAR" />
+    <result column="billTime" property="billtime" jdbcType="DATE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    billId, name, number, money, isPay, providername, describe, billTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from bill
+    where billId = #{billid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bill
+    where billId = #{billid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.admin.entity.Bill" >
+    insert into bill (billId, name, number, 
+      money, isPay, providername, 
+      describe, billTime)
+    values (#{billid,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{number,jdbcType=INTEGER}, 
+      #{money,jdbcType=INTEGER}, #{ispay,jdbcType=VARCHAR}, #{providername,jdbcType=VARCHAR}, 
+      #{describe,jdbcType=VARCHAR}, #{billtime,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.admin.entity.Bill" >
+    insert into bill
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="billid != null" >
+        billId,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="number != null" >
+        number,
+      </if>
+      <if test="money != null" >
+        money,
+      </if>
+      <if test="ispay != null" >
+        isPay,
+      </if>
+      <if test="providername != null" >
+        providername,
+      </if>
+      <if test="describe != null" >
+        describe,
+      </if>
+      <if test="billtime != null" >
+        billTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="billid != null" >
+        #{billid,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null" >
+        #{number,jdbcType=INTEGER},
+      </if>
+      <if test="money != null" >
+        #{money,jdbcType=INTEGER},
+      </if>
+      <if test="ispay != null" >
+        #{ispay,jdbcType=VARCHAR},
+      </if>
+      <if test="providername != null" >
+        #{providername,jdbcType=VARCHAR},
+      </if>
+      <if test="describe != null" >
+        #{describe,jdbcType=VARCHAR},
+      </if>
+      <if test="billtime != null" >
+        #{billtime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.admin.entity.Bill" >
+    update bill
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="number != null" >
+        number = #{number,jdbcType=INTEGER},
+      </if>
+      <if test="money != null" >
+        money = #{money,jdbcType=INTEGER},
+      </if>
+      <if test="ispay != null" >
+        isPay = #{ispay,jdbcType=VARCHAR},
+      </if>
+      <if test="providername != null" >
+        providername = #{providername,jdbcType=VARCHAR},
+      </if>
+      <if test="describe != null" >
+        describe = #{describe,jdbcType=VARCHAR},
+      </if>
+      <if test="billtime != null" >
+        billTime = #{billtime,jdbcType=DATE},
+      </if>
+    </set>
+    where billId = #{billid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.admin.entity.Bill" >
+    update bill
+    set name = #{name,jdbcType=VARCHAR},
+      number = #{number,jdbcType=INTEGER},
+      money = #{money,jdbcType=INTEGER},
+      isPay = #{ispay,jdbcType=VARCHAR},
+      providername = #{providername,jdbcType=VARCHAR},
+      describe = #{describe,jdbcType=VARCHAR},
+      billTime = #{billtime,jdbcType=DATE}
+    where billId = #{billid,jdbcType=INTEGER}
+  </update>
+</mapper>
