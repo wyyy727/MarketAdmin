@@ -130,11 +130,12 @@
 
         $.post(URL + "/providerController/provinces.do",
             function(resultJSONObject){
+            console.log(resultJSONObject)
                 if(resultJSONObject.status === "01"){
 
                     for(var i = 0; i < resultJSONObject.rows.length;i++){
 
-                        $('#province').append("<option value=" + resultJSONObject.rows[i].PROVINCEID + ">" + resultJSONObject.rows[i].PROVINCE + "</option>");
+                        $('#province').append("<option value=" + resultJSONObject.rows[i].provinceID + ">" + resultJSONObject.rows[i].province + "</option>");
                     }
                     // 缺一不可
                 }else {
@@ -450,11 +451,12 @@ function  provinceSelecteds(obj){
             provinceId:provinceIds
         },
         function(resultJSONObject){
+        console.log(resultJSONObject)
             if(resultJSONObject.status === "00"){
                 $('#city').empty();
                 for(var i = 0; i < resultJSONObject.rows.length;i++){
                     //console.log(resultJSONObject.rows[i].FACTORY_ID);
-                    $('#city').append("<option value=" + resultJSONObject.rows[i].CITYID + ">" + resultJSONObject.rows[i].CITY + "</option>");
+                    $('#city').append("<option value=" + resultJSONObject.rows[i].cityid + ">" + resultJSONObject.rows[i].city + "</option>");
                     // console.log(resultJSONObject.rows[i].FACTROY_NAME);
 
                 }
