@@ -229,7 +229,7 @@ $('#changeSave').click(function () {
     var upRemarks = $('#upRemark').val();
     var isPhone=[/^1[3|4|5|7|8]\d{9}$/]
     //var upStateValue = $('#upState').find("option:selected").text();
-
+    console.log(upProNames === "" +"``")
     if(isNaN(upProNames) || upProNames === "" || upProNames === undefined){
         var index;
         index = layer.msg('供应商名称为空', function(){
@@ -244,14 +244,14 @@ $('#changeSave').click(function () {
         });
         return;
     }
-    if(isNaN(upPhones) || upPhones.length < 2){
+    if(isNaN(upPhones)){
         var index;
         index = layer.msg('手机号码为空', function(){
             layer.close(index);
         });
         return;
     }
-    if(isNaN(upEmails) || upEmails === undefined || upEmails === "" || upEmails.length < 0){
+    if( upEmails === null || upEmails === "" ){
         var index;
         index = layer.msg('邮箱为空', function(){
             layer.close(index);
